@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const patientSchema = new mongoose.Schema({
+const doctorSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true,
@@ -19,10 +19,14 @@ const patientSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    qualification:{
+        type:String,
+        required:true,
+    },
     password:{
         type:String,
         required:true,
     },
 })
-const Patient = mongoose.model("Patient", patientSchema);
-export default Patient;
+const Doctor = mongoose.model("Doctor", doctorSchema);
+export default Doctor;

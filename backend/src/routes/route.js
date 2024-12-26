@@ -1,12 +1,14 @@
 import express from 'express';
 const router = express.Router() //Router(options?: express.RouterOptions):
-//get patient
-router.get("/patient",(req,res)=>{
-    res.send("Patient Changaa sii");
-})
+import { getPatient, createPatient } from "../controller/patient.controller.js";
+import { getDoctor, createDoctor } from "../controller/doctor.controller.js";
+//patient routes
+router.get("/patient",getPatient)
+router.post("/patient",createPatient);
 
-//patient signup
 
-
+//doctor routes
+router.get("/doctor",getDoctor)
+router.post("/doctor",createDoctor);
 
 export default router;
