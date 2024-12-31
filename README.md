@@ -11,6 +11,15 @@
 4. Allow Doctors and patients to confirm new slots quickly.
 5. Conflict Resolution that no duplicate appointments occur.
 
+## Techs
+NodeJs,
+Express,
+MongoDB,
+Twilio,
+Redis,
+Bull
+
+
 ## Schema
 ```javascript
 patient {

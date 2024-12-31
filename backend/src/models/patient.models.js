@@ -19,6 +19,10 @@ const patientSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    userType:{
+        type:String,
+        default:"patient",
+    },
     password:{
         type:String,
         required:true,

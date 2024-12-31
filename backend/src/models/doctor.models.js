@@ -23,10 +23,14 @@ const doctorSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
+    userType:{
+        type:String,
+        default:"doctor",
+    },
     password:{
         type:String,
         required:true,
     },
-})
+},{timestamps:true});
 const Doctor = mongoose.model("Doctor", doctorSchema);
 export default Doctor;
